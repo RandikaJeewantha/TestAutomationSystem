@@ -26,6 +26,6 @@ public class MyAccountMyDocumentsProfilePage extends TestBase {
 
 	public void checkingMyAccountMyDocumentsProfilePageUrl(){
 		String currentUrl = driver.getCurrentUrl();
-		Assert.assertEquals(baseURL + "/myaccount/mydocuments/profile", currentUrl);
+		Assert.assertEquals(baseURL + "/myaccount/mydocuments", currentUrl);
 	}
 }
