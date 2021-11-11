@@ -13,16 +13,16 @@ public class MyAccountLoginPage extends TestBase {
 	/* Page Factory - Object Repository - Declaring Web Site Elements */
 
 
-	@FindBy(id = "CustomerLoginForm_CustomerLoginForm_Email")
+	@FindBy(id = "Email")
 	WebElement loginEmailInputField;
 	
-	@FindBy(id = "CustomerLoginForm_CustomerLoginForm_Password")
+	@FindBy(id = "Password")
 	WebElement loginPasswordInputField;
 
-	@FindBy(id = "CustomerLoginForm_CustomerLoginForm_action_dologin")
+	@FindBy(id = "dologin")
 	WebElement loginButton;
 	
-	@FindBy(id = "CustomerLoginForm_CustomerLoginForm_error")
+	@FindBy(id = "error")
 	WebElement errorMessage;
 
 	
@@ -50,11 +50,6 @@ public class MyAccountLoginPage extends TestBase {
 	public DashboardPage clickLogInButton(){
 		loginButton.click();
 		return new DashboardPage();
-	}
-	
-	public void checkingMyAccountLoginPageUrlWithCustomerBackURLTodomainUserRolesPage(){
-		String currentUrl = driver.getCurrentUrl();
-		Assert.assertEquals(baseURL + "/myaccountlogin?CustomerBackURL=domainuserroles", currentUrl);
 	}
 
 }
