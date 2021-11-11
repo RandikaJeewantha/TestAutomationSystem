@@ -1,7 +1,7 @@
 Feature: Login Feature
 
 	Background:
-    When The user is on the domainsearch page.
+    When The user is on the index page.
     Then The user clicks the My Account button.
 		
 		
@@ -15,7 +15,7 @@ Feature: Login Feature
     	| info@example.net | 1234 		|
     	
     
-  Scenario Outline: Checking Incomplete Profile Scenario 02 - User Profile incomplete [NIC/Mobile/Address] - Should Display Essential Details Form.
+  Scenario Outline: Checking Incomplete Profile Scenario 02 - User Profile incomplete [Mobile/Address] - Should Display Essential Details Form.
 	  Then The user enters "<username>" and "<password>".
 	  And The user clicks the Log In button.
 	  Then The user navigates to the Essential Details Form.
@@ -32,7 +32,7 @@ Feature: Login Feature
     
     Examples:
     	| username 			 | password |
-    	| web@nethfm.com | 1234 		|
+    	| web@net.com | 1234 		|
     	
     	
 	Scenario Outline: Checking Valid Credentials Scenario 03/06 - User Email Verified / User Pending - Should Go To Dashboard.
@@ -42,7 +42,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	    | username 			 						| password |
-	    | samirawadduwage@gmail.com | 1234 		 |
+	    | s@gmail.com | 1234 		 |
 	    	
 	    	
 	Scenario Outline: Checking Valid Credentials Scenario 04/06 - User Email Not Verified / User Pending - Should Go To Resend Verification Email Page.
@@ -52,7 +52,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	    | username 			 						| password |
-	    | foruonline777@gmail.com   | 1234 		 |
+	    | forme@gmail.com   | 1234 		 |
 	    	
 	    	
 	Scenario Outline: Checking Valid Credentials Scenario 05/06 - User Email Verified / User Rejected - Should Not Go To Any Page.
@@ -62,7 +62,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	   	| username 			 						| password |
-	    | mafadotaiu@gmail.com      | 1234 		 |
+	    | mred@gmail.com      | 1234 		 |
 	    
 	    
   Scenario Outline: Checking Valid Credentials Scenario 06/06 - User Email Not Verified / User Rejected - Should Not Go To Any Page.
@@ -72,7 +72,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	   	| username 			 						| password |
-	    | mowinpro@gmail.com        | 1234 		 |
+	    | myouo@gmail.com        | 1234 		 |
 	    
 	    
 	Scenario Outline: Checking Invalid Credentials Scenario 01/07 - User Does Enter Valid Email / Valid Password - Should Go To Dashboard.
@@ -82,7 +82,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	   	| username 			 						| password |
-	    | info@lankahost.net        | 1234 		 | 
+	    | ind@last.net        | 1234 		 | 
 	    
 	    
 	Scenario Outline: Checking Invalid Credentials Scenario 02/07 - User Does Enter Invalid Email / Valid Password - Should Not Go To Any Page.
@@ -92,7 +92,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	   	| username 			 						| password |
-	    | info@lankahost.net/       | 1234 		 |
+	    | info@t.net/       | 1234 		 |
 	    
 	    
 	Scenario Outline: Checking Invalid Credentials Scenario 03/07 - User Does Enter Valid Email / Invalid Password - Should Not Go To Any Page.
@@ -102,7 +102,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	   	| username 			 						| password |
-	    | info@lankahost.net        | 1234458  |
+	    | ifo@lst.net        | 1234458  |
 	    
 	    
 	Scenario Outline: Checking Invalid Credentials Scenario 04/07 - User Does Enter Invalid Email / Invalid Password - Should Not Go To Any Page.
@@ -112,7 +112,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	   	| username 			 						| password |
-	    | info@lankahost.net/       | 1234458  |
+	    | in@chankah.net/       | 1234458  |
 	    
 	    
 	Scenario Outline: Checking Invalid Credentials Scenario 05/07 - User Does Not Enter Anything - Should Not Go To Any Page.
@@ -142,7 +142,7 @@ Feature: Login Feature
 	    
 	  Examples:
 	   	| username 					 | password |
-	    | info@lankahost.net |          |
+	    | info@lst.net |          |
 	    
 	    
 	Scenario Outline: Checking Incomplete Profile Scenario 01/01 - User Profile incomplete [NIC/Mobile/Address] - Should Display Essential Details Form.
@@ -152,5 +152,5 @@ Feature: Login Feature
 	    
 	  Examples:
 	   	| username 					 					| password |
-	    | pavankarunarathna@gmail.com | 1234     |    	
+	    | parengana@gmail.com | 1234     |    	
 	    	
